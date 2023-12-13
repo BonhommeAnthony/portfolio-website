@@ -43,8 +43,8 @@ export function Intro() {
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
             >
-                <span className="font-bold">Hello, I'm Anthony. </span>
-                I'm a <span className="font-bold">Senior Front-End Engineer </span>
+                <span className="font-bold">Hello, I&apos;m Anthony. </span>
+                I&apos;m a <span className="font-bold">Senior Front-End Engineer </span>
                 with <span className="font-bold"> 5 years </span>
                 of experience specializing in high-impact digital solutions. Proficient in
                 <span className="font-bold italic"> React.js</span>,<span className="font-bold italic"> Next.js</span>,
