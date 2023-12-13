@@ -38,7 +38,7 @@ export function Intro() {
                     </motion.span>
                 </div>
             </div>
-            <motion.p
+            <motion.h1
                 className="mb-10 mt-4 px-4 text-xl sm:text-3xl font-medium !leading-[1.5]"
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -50,7 +50,7 @@ export function Intro() {
                 <span className="font-bold italic"> React.js</span>,<span className="font-bold italic"> Next.js</span>,
                 <span className="font-bold italic">Typescript</span> and
                 <span className="font-bold italic "> Solidity</span>.
-            </motion.p>
+            </motion.h1>
             <motion.div
                 className="flex flex-col sm:flex-row gap-3 justify-center items-center px-4"
                 initial={{ opacity: 0, y: 100 }}
