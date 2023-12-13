@@ -8,9 +8,7 @@ import { BsArrowRight, BsGithub } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { BsLinkedin } from "react-icons/bs";
 
-export interface IIntroProps {}
-
-export function Intro(props: IIntroProps) {
+export function Intro() {
     return (
         <section className="mb-28 max-w-[50rem] text-center sm:mb-0 ">
             <div className="flex items-center justify-center">
