@@ -52,7 +52,7 @@ export function Header() {
                                             stiffness: 380,
                                             damping: 30,
                                         }}
-                                        className="bg-gray-200 rounded-full absolute inset-0 -z-10 "
+                                        className="bg-gradient-to-r from-[#fbe2e3] to-[#dbd7fb] rounded-full absolute inset-0 -z-10"
                                     ></motion.div>
                                 )}
                             </Link>

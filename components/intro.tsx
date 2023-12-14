@@ -12,7 +12,7 @@ export function Intro() {
     const { ref } = useSectionInView("Home");
 
     return (
-        <section ref={ref} className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]" id="home">
+        <section ref={ref} className=" max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]" id="home">
             <div className="flex items-center justify-center">
                 <div className="relative">
                     <motion.div
@@ -66,38 +66,42 @@ export function Intro() {
                 >
                     Contact me here <BsArrowRight className="opacity-70 group-hover:rotate-90 transition" />
                 </Link>
-                <a
-                    href="/CV.pdf"
-                    download
-                    className="group flex items-center bg-white text-gray-900 px-7 py-3 gap-2 rounded-full
+                <div className="flex gap-3">
+                    <a
+                        href="/CV.pdf"
+                        download
+                        className="group flex items-center bg-white text-gray-900 px-7 py-3 gap-2 rounded-full
                 outline-none focus:scale-105 hover:scale-105 active:scale-110 transition font-semibold cursor-pointer border border-black/10"
-                >
-                    CV <HiDownload className="group-hover:translate-y-1 transition" />{" "}
-                </a>
-                <a
-                    href="/web3CV.pdf"
-                    download
-                    className="group flex items-center bg-white text-gray-900 px-7 py-3 gap-2 rounded-full
+                    >
+                        CV <HiDownload className="group-hover:translate-y-1 transition" />{" "}
+                    </a>
+                    <a
+                        href="/web3CV.pdf"
+                        download
+                        className="group flex items-center bg-white text-gray-900 px-7 py-3 gap-2 rounded-full
                 outline-none focus:scale-105 hover:scale-105 active:scale-110 transition font-semibold cursor-pointer border border-black/10"
-                >
-                    Web3 CV <HiDownload className="group-hover:translate-y-1 transition" />{" "}
-                </a>
-                <a
-                    href="https://www.linkedin.com/in/anthonybonhomme-blockchain/"
-                    target="_blank"
-                    className="flex items-center bg-white text-gray-700 p-4 gap-2 rounded-full border border-black/10
+                    >
+                        Web3 CV <HiDownload className="group-hover:translate-y-1 transition" />{" "}
+                    </a>
+                </div>
+                <div className="flex gap-3">
+                    <a
+                        href="https://www.linkedin.com/in/anthonybonhomme-blockchain/"
+                        target="_blank"
+                        className="flex items-center bg-white text-gray-700 p-4 gap-2 rounded-full border border-black/10
                 outline-none focus:scale-105 hover:scale-105 active:scale-110 transition font-semibold cursor-pointer"
-                >
-                    <BsLinkedin />
-                </a>
-                <a
-                    href="https://github.com/BonhommeAnthony"
-                    target="_blank"
-                    className="flex items-center bg-white text-gray-700 p-4 gap-2 rounded-full border border-black/10
+                    >
+                        <BsLinkedin />
+                    </a>
+                    <a
+                        href="https://github.com/BonhommeAnthony"
+                        target="_blank"
+                        className="flex items-center bg-white text-gray-700 p-4 gap-2 rounded-full border border-black/10
                 outline-none focus:scale-105 hover:scale-105 active:scale-110 transition font-semibold cursor-pointer"
-                >
-                    <BsGithub />
-                </a>
+                    >
+                        <BsGithub />
+                    </a>
+                </div>
             </motion.div>
         </section>
     );
