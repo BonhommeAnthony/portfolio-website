@@ -1,10 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
     {
@@ -39,7 +35,7 @@ export const experiencesData = [
         location: "Remote - Paris - New York",
         description:
             "Spearheaded the development of a comprehensive marketplace for craft wine, successfully attracting over 1,000 producers and more than 50 sellers within the first year.",
-        icon: React.createElement(LuGraduationCap),
+        icon: React.createElement(CgWorkAlt),
         date: "2021 - 2023",
     },
     {
@@ -55,7 +51,7 @@ export const experiencesData = [
         location: "Avignon",
         description:
             "Utilized advanced technologies like React.js and Next.js to build responsive, scalable, and visually compelling web solutions.",
-        icon: React.createElement(FaReact),
+        icon: React.createElement(CgWorkAlt),
         date: "2019 - 2021",
     },
 ] as const;
