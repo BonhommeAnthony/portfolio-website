@@ -7,9 +7,11 @@ import { BsArrowRight, BsGithub } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { BsLinkedin } from "react-icons/bs";
 import { useSectionInView } from "@/lib/hooks";
+import { useActiveSection } from "@/context/active-section-context";
 
 export function Intro() {
     const { ref } = useSectionInView("Home");
+    const { setActiveSection, setTimeOfLastClick } = useActiveSection();
 
     return (
         <section ref={ref} className=" max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]" id="home">
@@ -63,6 +65,10 @@ export function Intro() {
                     href="#contact"
                     className=" group flex items-center bg-gray-900 text-white px-7 py-3 gap-2 rounded-full
                      font-semibold outline-none focus:scale-105 hover:scale-105 active:scale-110 transition "
+                    onClick={() => {
+                        setActiveSection("Contact");
+                        setTimeOfLastClick(Date.now());
+                    }}
                 >
                     Contact me here <BsArrowRight className="opacity-70 group-hover:rotate-90 transition" />
                 </Link>
@@ -71,7 +77,7 @@ export function Intro() {
                         href="/CV.pdf"
                         download
                         className="group flex items-center bg-white text-gray-900 px-7 py-3 gap-2 rounded-full
-                outline-none focus:scale-105 hover:scale-105 active:scale-110 transition font-semibold cursor-pointer border border-black/10"
+                outline-none focus:scale-105 hover:scale-105 active:scale-110 transition font-semibold cursor-pointer borderBlack"
                     >
                         CV <HiDownload className="group-hover:translate-y-1 transition" />{" "}
                     </a>
@@ -79,7 +85,7 @@ export function Intro() {
                         href="/web3CV.pdf"
                         download
                         className="group flex items-center bg-white text-gray-900 px-7 py-3 gap-2 rounded-full
-                outline-none focus:scale-105 hover:scale-105 active:scale-110 transition font-semibold cursor-pointer border border-black/10"
+                outline-none focus:scale-105 hover:scale-105 active:scale-110 transition font-semibold cursor-pointer borderBlack"
                     >
                         Web3 CV <HiDownload className="group-hover:translate-y-1 transition" />{" "}
                     </a>
@@ -88,7 +94,7 @@ export function Intro() {
                     <a
                         href="https://www.linkedin.com/in/anthonybonhomme-blockchain/"
                         target="_blank"
-                        className="flex items-center bg-white text-gray-700 p-4 gap-2 rounded-full border border-black/10
+                        className="flex items-center bg-white text-gray-700 p-4 gap-2 rounded-full borderBlack
                 outline-none focus:scale-105 hover:scale-105 active:scale-110 transition font-semibold cursor-pointer"
                     >
                         <BsLinkedin />
@@ -96,7 +102,7 @@ export function Intro() {
                     <a
                         href="https://github.com/BonhommeAnthony"
                         target="_blank"
-                        className="flex items-center bg-white text-gray-700 p-4 gap-2 rounded-full border border-black/10
+                        className="flex items-center bg-white text-gray-700 p-4 gap-2 rounded-full borderBlack
                 outline-none focus:scale-105 hover:scale-105 active:scale-110 transition font-semibold cursor-pointer"
                     >
                         <BsGithub />
