@@ -5,16 +5,15 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
 export function About() {
-    const { ref } = useSectionInView("About");
-
+    const { ref } = useSectionInView("About", 0.5);
     return (
         <motion.section
             ref={ref}
+            id="about"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
             className=" max-w-[45rem] text-center  leading-8  tracking-wide scroll-mt-28"
-            id="about"
         >
             <SectionHeading title="About me" />
             <p className="mb-3">
